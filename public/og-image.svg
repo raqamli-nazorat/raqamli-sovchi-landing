@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none">
+  <!-- Ijtimoiy tarmoq uchun oldindan ko'rish rasmi (1200x630). -->
+  <rect width="1200" height="630" fill="#ffffff" />
+  <circle cx="1060" cy="90" r="240" fill="#0474F3" opacity="0.08" />
+  <circle cx="120" cy="580" r="180" fill="#0474F3" opacity="0.06" />
+
+  <g transform="translate(96 150)">
+    <rect width="76" height="76" rx="19" fill="#0474F3" />
+    <g transform="scale(2.0127)">
+      <path
+        d="M28.42 18.1992L23.6906 29.0098L12.88 24.2812L14.5118 20.5498H21.1398V15.0137L28.42 18.1992ZM21.1398 15.0137L17.6085 13.4697L14.5118 20.5498H9.33997V8.75H21.1398V15.0137Z"
+        fill="#FCFCFC" />
+    </g>
+  </g>
+
+  <text x="188" y="200" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700"
+    letter-spacing="-0.4" fill="#0A0A0A">Raqamli Sovchi</text>
+
+  <text x="96" y="330" font-family="Inter, system-ui, sans-serif" font-size="62" font-weight="800"
+    letter-spacing="-1.6" fill="#0A0A0A">Nikoh uchun jiddiy tanishuv</text>
+  <text x="96" y="406" font-family="Inter, system-ui, sans-serif" font-size="62" font-weight="800"
+    letter-spacing="-1.6" fill="#0474F3">— oila roziligi bilan</text>
+
+  <text x="96" y="486" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="500"
+    fill="#5b6474">30 savollik moslik tahlili · tasdiqlangan anketa · vakil nazorati</text>
+</svg>

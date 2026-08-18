@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <!--
+    Android "maskable" ikonka: fon TO'LIQ to'ldiriladi, belgi esa markazdagi
+    xavfsiz doiraga sig'adi — tizim uni doira yoki tomchi shaklida qirqsa ham
+    shakl kesilmaydi. Belgi logoIcon.svg dan olingan.
+  -->
+  <rect width="512" height="512" fill="#0474F3" />
+  <g transform="translate(102.4 102.4) scale(8.135)">
+    <path
+      d="M28.42 18.1992L23.6906 29.0098L12.88 24.2812L14.5118 20.5498H21.1398V15.0137L28.42 18.1992ZM21.1398 15.0137L17.6085 13.4697L14.5118 20.5498H9.33997V8.75H21.1398V15.0137Z"
+      fill="#FCFCFC" />
+  </g>
+</svg>

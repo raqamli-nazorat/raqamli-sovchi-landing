@@ -1,0 +1,217 @@
+/* Shrift importi Tailwind'dan OLDIN turishi shart — aks holda PostCSS uni
+   "@import must precede all other statements" deb tashlab yuboradi. */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: 'Manrope', system-ui, sans-serif;
+  --font-heading: var(--font-sans);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* ─────────────────────────────────────────────────────────────────
+     Loyihaning o'z tokenlari.
+
+     Bu yerda faqat NOM bor, QIYMAT esa pastdagi `:root` (kunduzgi) va
+     `.dark` (tungi) bloklarida — `@theme inline` mavzuga qaramaydi,
+     shuning uchun qiymatni shu yerga yozib bo'lmaydi.
+
+     YANGI RANG KERAK BO'LSA: shu yerga nom, pastdagi IKKALA blokka
+     qiymat qo'shing — komponentlarda hex yozmang.
+     ───────────────────────────────────────────────────────────────── */
+  --color-surface: var(--app-surface);
+  --color-panel: var(--app-panel);
+  --color-raised: var(--app-raised);
+  --color-hover: var(--app-hover);
+  --color-hover-strong: var(--app-hover-strong);
+  --color-line: var(--app-line);
+  --color-line-strong: var(--app-line-strong);
+
+  --color-ink: var(--app-ink);
+  --color-body: var(--app-body);
+  --color-muted: var(--app-muted);
+  --color-faint: var(--app-faint);
+
+  --color-brand: var(--app-brand);
+  --color-brand-hover: var(--app-brand-hover);
+  --color-brand-soft: var(--app-brand-soft);
+  --color-on-soft: var(--app-on-soft);
+  --color-brand-ink: var(--app-brand-ink);
+
+  --color-success: var(--app-success);
+  --color-success-soft: var(--app-success-soft);
+  --color-warn: var(--app-warn);
+  --color-warn-soft: var(--app-warn-soft);
+  --color-danger: var(--app-danger);
+  --color-danger-soft: var(--app-danger-soft);
+
+  --shadow-card: 0 1px 2px rgb(16 24 40 / 0.04);
+  --shadow-raised: 0 8px 28px -12px rgb(16 24 40 / 0.18);
+  --shadow-phone: 0 32px 70px -28px rgb(16 24 40 / 0.35);
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* ─── KUNDUZGI palitra ─── */
+  --app-surface: #ffffff;
+  --app-panel: #ffffff;
+  --app-raised: #fafafa;
+  --app-hover: #f5f5f5;
+  --app-hover-strong: #ebebeb;
+  --app-line: #e5e5e5;
+  --app-line-strong: #d4d4d4;
+
+  --app-ink: #0a0a0a;
+  --app-body: #404040;
+  --app-muted: #525252;
+  --app-faint: #737373;
+
+  /* Brend — logotip faylidagi aynan shu ko'k (public/Logo.svg). */
+  --app-brand: #0474f3;
+  --app-brand-hover: #045fc9;
+  --app-brand-soft: #e5f3ff;
+  --app-on-soft: #0072cc;
+  --app-brand-ink: #ffffff;
+
+  --app-success: #16a34a;
+  --app-success-soft: #eefaf2;
+  --app-warn: #d97706;
+  --app-warn-soft: #fff7ed;
+  --app-danger: #dc2626;
+  --app-danger-soft: #fef2f2;
+
+  --scrollbar-thumb: #d1d5db;
+  --scrollbar-thumb-hover: #9ca3af;
+}
+
+.dark {
+  /* ─── TUNGI palitra ─── */
+  --app-surface: #0f1218;
+  --app-panel: #151922;
+  --app-raised: #1b2029;
+  --app-hover: #1b2029;
+  --app-hover-strong: #232936;
+  --app-line: #232936;
+  --app-line-strong: #2f3746;
+
+  --app-ink: #f2f4f7;
+  --app-body: #c7ccd6;
+  --app-muted: #9aa3b2;
+  --app-faint: #6b7482;
+
+  --app-brand: #4d9bf7;
+  --app-brand-hover: #6fb0f9;
+  --app-brand-soft: #10233c;
+  --app-on-soft: #6fb0f9;
+  --app-brand-ink: #0f1218;
+
+  --app-success: #4ade80;
+  --app-success-soft: #12261a;
+  --app-warn: #fbbf24;
+  --app-warn-soft: #2a1f0e;
+  --app-danger: #f87171;
+  --app-danger-soft: #2a1414;
+
+  --scrollbar-thumb: #2e3440;
+  --scrollbar-thumb-hover: #3f4756;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Sticky sarlavha ostiga tushib qolmasin — `#id` ga o'tishda joy qoldiradi. */
+    scroll-padding-top: 5.5rem;
+    scrollbar-color: var(--scrollbar-thumb) transparent;
+    scrollbar-width: thin;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Klaviatura bilan yuruvchilar uchun ko'rinadigan fokus halqasi */
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/**
+ * Sahifaga kirish animatsiyasi.
+ *
+ * `IntersectionObserver` element ko'ringanda `data-visible` qo'yadi
+ * (`useReveal`), CSS esa shu paytgacha uni yashirib turadi. Klass yo'q
+ * bo'lsa element oddiy — JS o'chsa ham matn ko'rinaveradi.
+ */
+.reveal {
+  opacity: 0;
+}
+
+.reveal[data-visible='true'] {
+  animation: fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
