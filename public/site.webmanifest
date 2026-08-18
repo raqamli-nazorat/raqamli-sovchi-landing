@@ -1,0 +1,25 @@
+{
+  "name": "Raqamli Sovchi",
+  "short_name": "Sovchi",
+  "description": "Nikoh uchun jiddiy tanishuv: tasdiqlangan anketa, 30 ta moslik savoli va vakil nazorati.",
+  "lang": "uz",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1d6ff2",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "maskable"
+    }
+  ]
+}

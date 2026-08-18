@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raqamli Sovchi | Nikoh uchun jiddiy tanishuv</title>
+  <meta name="description"
+    content="Raqamli Sovchi — nikoh uchun jiddiy tanishuv: tasdiqlangan anketalar, 30 ta moslik savoli va oila roziligi bilan." />
+
+  <!-- Brend fayllari `public/` da; geometriyasi BrandMark.jsx bilan bir xil. -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/icon-maskable.svg" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#1d6ff2" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Raqamli Sovchi | Nikoh uchun jiddiy tanishuv" />
+  <meta property="og:description"
+    content="30 savollik moslik tahlili, tasdiqlangan anketalar va vakil orqali boshqaruv." />
+  <meta property="og:image" content="/og-image.svg" />
+  <meta property="og:locale" content="uz_UZ" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!--
+    Mavzu React yuklanguncha tanlanadi: aks holda tungi rejimdagi
+    foydalanuvchida sahifa bir lahza oq yonib, keyin qorayadi.
+  -->
+  <script>
+    (function () {
+      // Sukut bo'yicha KUNDUZGI: maket yorug' rejimda chizilgan, tungi rejim
+      // esa foydalanuvchi o'zi yoqqanda ishlaydi (tanlov localStorage'da).
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark')
+      }
+    })()
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
