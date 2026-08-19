@@ -22,7 +22,10 @@ export default function Psychologists() {
 
       <div className="mt-12 grid gap-5 md:mt-14 lg:grid-cols-3">
         {PSYCHOLOGISTS.items.map((person, i) => (
-          <Reveal key={person.name} delay={i * 80} className="h-full">
+          // `min-w-0` shart: usiz grid ustuni ichkaridagi `truncate` matnning
+          // TO‘LIQ enini talab qiladi (min-width: auto) va tor ekranda kartochka
+          // konteynerdan chiqib ketadi — qisqartirish esa umuman ishlamaydi.
+          <Reveal key={person.name} delay={i * 80} className="h-full min-w-0">
             <article className="flex h-full flex-col rounded-2xl border border-line bg-panel p-6">
               <div className="flex items-center gap-3.5">
                 <span

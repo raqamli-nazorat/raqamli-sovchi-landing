@@ -20,6 +20,22 @@ export const APP_SHOTS = {
   match: { src: '/app-moslik.png', alt: 'Moslik natijasi ekrani' },
 }
 
+/**
+ * Hero'dagi telefon — Figmadan eksport qilingan IKKI HOLAT.
+ *
+ * Bu ikkita o'lcham emas, ikkita BOSHQA rasm: keng ekranda telefon bo'lim
+ * pastidan kesilgan holda (pastki menyusi ko'rinmaydi), tor ekranda esa
+ * to'liq, menyusi va home-indikatori bilan. Shuning uchun <picture> ichida
+ * media-shart orqali almashadi — ikkalasi birga yuklanmaydi.
+ *
+ * O'lchamlar asl fayldan: CLS bo'lmasligi uchun <img> ga yoziladi.
+ */
+export const HERO_PHONE = {
+  wide: { src: '/iPhone.png', width: 499, height: 688 },
+  narrow: { src: '/iPhone (1).png', width: 288, height: 587 },
+  alt: 'Ilova ekrani: moslik foizi bilan nomzodlar ro‘yxati, suratlar parda tartibida yopiq',
+}
+
 /** Footer'dagi ijtimoiy tarmoq nomi → nishon. */
 export const SOCIAL_ICONS = {
   Telegram: TelegramIcon,
