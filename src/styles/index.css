@@ -6,6 +6,19 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  /*
+    Maketning KENG holati 1200px kadrda chizilgan va hero ikki ustunga
+    o'sha yerda bo'linadi. Tailwind'ning lg (1024px) erta: o'lchandi —
+    telefon 499px + oraliq 48px qolganda matnga 429px qoladi va 56px
+    sarlavha xunuk sinadi. Shuning uchun maxsus chegara.
+
+    Qiymat REM da: Tailwind sukutdagi chegaralarni rem da yozadi va px
+    bilan aralashtirilsa media-bloklarni NOTO‘G‘RI tartiblaydi — 1180px
+    bloki sm dan oldin tushib, sm: qoidalari uni bosib ketardi.
+    73.75rem = 1180px.
+  */
+  --breakpoint-wide: 73.75rem;
+
   --font-sans: 'Manrope', system-ui, sans-serif;
   --font-heading: var(--font-sans);
 

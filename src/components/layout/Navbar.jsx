@@ -42,10 +42,15 @@ export default function Navbar() {
         scrolled && 'bg-surface/90 backdrop-blur-md',
       )}
     >
-      <div className="mx-auto flex h-16 w-full max-w-[1200px] items-center gap-4 px-4 sm:px-6 lg:h-20 lg:gap-10">
-        <Logo href="#top" />
+      <div className="mx-auto flex h-16 w-full max-w-[1200px] items-center gap-2 px-4 min-[22.5rem]:gap-4 sm:px-6 wide:h-20 wide:gap-10">
+        <Logo
+          href="#top"
+          // O‘lchandi: 390px kadrda logotip + tugma + gamburger maketdagi
+          // 20px nom bilan bir qatorga sig‘maydi va sahifa yonga suriladi.
+          textClassName="text-[15px] min-[22.5rem]:text-[17px] wide:text-[20px]"
+        />
 
-        <nav className="hidden items-center gap-7 lg:flex xl:gap-9">
+        <nav className="hidden items-center gap-7 wide:flex xl:gap-9">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
@@ -58,9 +63,19 @@ export default function Navbar() {
         </nav>
 
         <div className="ml-auto flex items-center gap-1.5 sm:gap-2.5">
-          <Button as="a" href="#yuklab-olish" variant="primary" size="md">
-            <span className="lg:hidden">{NAV_CTA.short}</span>
-            <span className="hidden lg:inline">{NAV_CTA.long}</span>
+          <Button
+            as="a"
+            href="#yuklab-olish"
+            variant="primary"
+            size="md"
+            // Yon to‘ldirish tor ekranda kichrayadi: 390px kadrda logotip,
+            // tugma va gamburger maketdagi 28px bilan bir qatorga sig‘maydi.
+            className="px-2.5 min-[22.5rem]:px-4 sm:px-5 wide:px-7"
+          >
+            {/* Eng tor ekranda ikonka yashiriladi: o‘sha yerda har piksel hisobda. */}
+            <Icon name="download" size={16} strokeWidth={2.1} className="hidden sm:block" />
+            <span className="wide:hidden">{NAV_CTA.short}</span>
+            <span className="hidden wide:inline">{NAV_CTA.long}</span>
           </Button>
 
           {/* Gamburger — maketda ramkasiz, oddiy ikonka. */}
@@ -69,7 +84,7 @@ export default function Navbar() {
             onClick={() => setOpen((v) => !v)}
             aria-label="Menyu"
             aria-expanded={open}
-            className="-mr-1 flex h-10 w-10 cursor-pointer items-center justify-center text-ink lg:hidden"
+            className="-mr-1 flex h-10 w-10 cursor-pointer items-center justify-center text-ink wide:hidden"
           >
             <Icon name={open ? 'close' : 'menu'} size={24} strokeWidth={2.2} />
           </button>
@@ -91,7 +106,7 @@ export default function Navbar() {
       <div
         aria-hidden={!open}
         className={cn(
-          'grid overflow-hidden bg-surface transition-all duration-400 ease-out lg:hidden',
+          'grid overflow-hidden bg-surface transition-all duration-400 ease-out wide:hidden',
           open
             ? 'grid-rows-[1fr] border-t border-line opacity-100'
             : 'pointer-events-none grid-rows-[0fr] border-t border-transparent opacity-0',

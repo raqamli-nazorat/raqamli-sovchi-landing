@@ -1,6 +1,8 @@
 import {
   ArrowRight,
+  CirclePlay,
   Clock,
+  Download,
   Eye,
   Heart,
   MessageCircle,
@@ -17,6 +19,7 @@ import {
   SlidersHorizontal,
   Sparkles,
   Sun,
+  UserRoundPlus,
   X,
 } from 'lucide-react'
 import {
@@ -63,6 +66,11 @@ export const ICONS = {
   filter: SlidersHorizontal,
   shieldCheck: ShieldCheck,
   clock: Clock,
+  download: Download,
+
+  // — Tugma ichidagi ikonkalar (maketda matndan oldin turadi) —
+  userPlus: UserRoundPlus,
+  playCircle: CirclePlay,
 
   // — Imkoniyatlar kartochkalari (maketda lucide uslubidagi chiziqli ikonkalar) —
   sparkle: Sparkles,
@@ -112,6 +120,9 @@ export const ICON_GROUPS = [
       'filter',
       'shieldCheck',
       'clock',
+      'download',
+      'userPlus',
+      'playCircle',
     ],
   },
   {

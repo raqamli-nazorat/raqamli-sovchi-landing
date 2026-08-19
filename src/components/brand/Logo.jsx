@@ -28,6 +28,9 @@ export default function Logo({
   withTagline = false,
   href,
   className,
+  // Sarlavhada nom tor ekranda kichrayadi — boshqa joyda kerak emas,
+  // shuning uchun yangi `size` emas, faqat qo'shimcha klass.
+  textClassName,
 }) {
   const inverse = tone === 'inverse'
   const Tag = href ? 'a' : 'span'
@@ -49,6 +52,7 @@ export default function Logo({
               'tracking-[-0.02em] whitespace-nowrap',
               TEXT_SIZES[size],
               inverse ? 'text-white' : 'text-ink',
+              textClassName,
             )}
           >
             {short ? (
