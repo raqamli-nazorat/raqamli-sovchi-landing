@@ -4,9 +4,11 @@ import { Reveal } from '@/components/ui/Section.jsx'
 /**
  * Yakuniy chaqiruv lentasi.
  *
- * Do'kon tugmalari maketda LOGOTIPSIZ: ustida kichik kulrang izoh
- * ("iOS uchun"), ostida qalin qora nom ("App Store"). Ikkalasi ham oq,
- * ya'ni ko'k fonda bir xil og'irlikda turadi.
+ * Do'kon tugmalari Figma badge'lariga mos: yarim shaffof oq fon
+ * (rgba 255 255 255 / 0.1), radius 20px, chapda logotip
+ * (`public/Apple.svg`, `public/Playstore.svg`), o'ngda ikki qator —
+ * kichik izoh ("Download on the" / "GET IT ON") va yirik nom
+ * ("App Store" / "Google Play"), hammasi oq.
  */
 export default function CtaBanner() {
   return (
@@ -20,15 +22,25 @@ export default function CtaBanner() {
             {CTA.subtitle}
           </p>
 
-          <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
+          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             {CTA.stores.map((store) => (
               <a
                 key={store.name}
                 href="#top"
-                className="rounded-2xl bg-white px-8 py-3 text-center transition-opacity hover:opacity-90"
+                className="flex items-center gap-3 rounded-[20px] bg-white/10 px-6 py-3.5 text-left ring-1 ring-inset ring-white/10 transition-colors hover:bg-white/[0.16]"
               >
-                <span className="block text-[13px] text-[#5b6474]">{store.caption}</span>
-                <span className="block text-[17px] font-bold text-[#0a0a0a]">{store.name}</span>
+                <img
+                  src={store.icon}
+                  alt=""
+                  aria-hidden="true"
+                  className="h-9 w-auto flex-shrink-0"
+                />
+                <span className="text-white">
+                  <span className="block text-[15px] leading-none font-medium">{store.caption}</span>
+                  <span className="mt-1 block text-[29px] leading-none font-semibold tracking-[-0.8px]">
+                    {store.name}
+                  </span>
+                </span>
               </a>
             ))}
           </div>

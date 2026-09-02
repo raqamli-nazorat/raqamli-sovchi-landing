@@ -9,12 +9,12 @@ export default function Pricing() {
     <Section id="narxlar" tone="raised">
       <SectionHeading eyebrow={PRICING.eyebrow} title={PRICING.title} subtitle={PRICING.subtitle} />
 
-      <div className="mt-12 grid items-stretch gap-5 md:mt-14 lg:grid-cols-3">
+      <div className="mt-12 grid items-start gap-5 md:mt-14 lg:grid-cols-3">
         {PRICING.plans.map((plan, i) => (
-          <Reveal key={plan.name} delay={i * 80} className="h-full">
+          <Reveal key={plan.name} delay={i * 80}>
             <article
               className={cn(
-                'flex h-full flex-col rounded-2xl bg-panel p-6 md:p-8',
+                'flex flex-col rounded-2xl bg-panel p-6 md:p-8',
                 // Maketda ajratilgan tarif faqat KO'K RAMKA bilan belgilangan —
                 // baland ko'tarilmaydi va soya olmaydi.
                 plan.featured ? 'border-2 border-brand' : 'border border-line',
@@ -31,7 +31,7 @@ export default function Pricing() {
               </div>
 
               <p className="mt-5 text-[30px] font-bold tracking-tight text-ink md:text-[34px]">
-                {formatSum(plan.price)} so‘m
+                {formatSum(plan.price)} so’m
                 {plan.period ? <span className="font-bold text-ink"> {plan.period}</span> : null}
               </p>
               <p className="mt-3 text-[15px] text-muted">{plan.caption}</p>
@@ -45,9 +45,9 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              {/* `mt-auto` — ro'yxatlar uzunligi har xil, tugmalar esa
-                  uchala kartochkada ham pastda, bir chiziqda tursin. */}
-              <div className="mt-auto pt-8">
+              {/* Kartochka o'z matniga qarab o'lchamda turadi — cho'zilmaydi,
+                  shuning uchun tugma ro'yxatdan keyin darhol keladi. */}
+              <div className="pt-8">
                 <Button
                   variant={plan.featured ? 'primary' : 'secondary'}
                   size="lg"

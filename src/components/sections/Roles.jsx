@@ -1,5 +1,4 @@
 import { ROLES } from '@/constants/content.js'
-import { AVATAR_STROKE, AVATAR_TONES } from '@/constants/avatarTones.js'
 import Icon from '@/components/ui/Icon.jsx'
 import Section, { Reveal, SectionHeading } from '@/components/ui/Section.jsx'
 
@@ -12,11 +11,8 @@ export default function Roles() {
         {ROLES.items.map((role, i) => (
           <Reveal key={role.key} delay={i * 80} className="h-full">
             <article className="h-full rounded-[20px] border border-line bg-panel p-6 md:p-8">
-              <span
-                className={`flex h-12 w-12 items-center justify-center rounded-[14px] ${AVATAR_TONES[role.tone]}`}
-              >
-                <Icon name={role.icon} size={22} strokeWidth={AVATAR_STROKE} />
-              </span>
+              {/* Rol nishoni — Figmadan, rangi rolga bog'liq (SVG ichida). */}
+              <img src={role.icon} alt="" aria-hidden="true" className="h-10 w-auto" />
 
               {/* Figma: 22/30 Bold, letter-spacing −0.4px */}
               <h3 className="mt-6 text-[22px] leading-[30px] font-bold tracking-[-0.4px] text-ink">

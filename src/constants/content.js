@@ -50,7 +50,7 @@ export const STATS = [
 
 export const COMPARISON = {
   eyebrow: 'Nega Sovchi',
-  title: 'An’anaviy sovchilik sekin, tasodifiy va nazoratsiz',
+  title: "Anʼanaviy sovchilik sekin, tasodifiy va nazoratsiz",
   subtitle: 'Uch xil muammo — va ilova ularni qanday hal qilishi.',
   solutionLabel: 'Sovchi bilan',
   rows: [
@@ -59,12 +59,12 @@ export const COMPARISON = {
         title: 'Nomzodlar doirasi tor',
         text: 'Tanish-bilish orqali izlash oylar davom etadi va bir necha nomzod bilan cheklanadi.',
       },
-      solution: 'Viloyat, yosh, ta’lim va moslik foizi bo‘yicha filtr — mos nomzodlar bir ekranda.',
+      solution: 'Viloyat, yosh, taʻlim va moslik foizi boʻyicha filtr — mos nomzodlar bir ekranda.',
     },
     {
       problem: {
-        title: 'Ma’lumot tekshirilmaydi',
-        text: 'Yosh, oila, ta’lim haqidagi gaplar og‘zaki uzatiladi va noto‘g‘ri chiqishi mumkin.',
+        title: 'Maʻlumot tekshirilmaydi',
+        text: 'Yosh, oila, taʻlim haqidagi gaplar og‘zaki uzatiladi va noto‘g‘ri chiqishi mumkin.',
       },
       solution:
         'Pasport va selfi orqali tasdiqlash, «Tasdiqlangan profil» belgisi va shikoyat tizimi.',
@@ -82,20 +82,20 @@ export const COMPARISON = {
 
 export const STEPS = {
   eyebrow: 'Qanday ishlaydi',
-  title: 'To‘rt qadam — ro‘yxatdan suhbatgacha',
+  title: 'Toʻrt qadam — roʻyxatdan suhbatgacha',
   subtitle:
-    'Anketa to‘ldirish 9 qadam, moslik testi esa ixtiyoriy: testsiz ham nomzodlarni ko‘rish mumkin.',
+    'Anketa toʻldirish 9 qadam, moslik testi esa ixtiyoriy: testsiz ham nomzodlarni koʻrish mumkin.',
   items: [
     {
       no: '01',
-      title: 'Ro‘yxatdan o‘tish',
+      title: 'Roʻyxatdan oʻtish',
       text: 'Telefon raqami va SMS kod. So‘ng rolni tanlaysiz: kuyov, kelin yoki vakil.',
       textShort: 'Telefon raqami va SMS kod, so‘ng rolni tanlaysiz.',
     },
     {
       no: '02',
-      title: 'Anketa to‘ldirish',
-      text: 'Ism, yosh, bo‘y, viloyat, ta’lim, suratlar va ovozli tanishtiruv — 9 qadam, progress bilan.',
+      title: `So'rovnoma toʻldirish`,
+      text: 'Ism, yosh, boʻy, viloyat, taʼlim, suratlar va ovozli tanishtiruv — 9 qadam, progress bilan.',
       textShort: '9 qadam: ism, yosh, bo‘y, viloyat, suratlar, ovoz.',
     },
     {
@@ -107,7 +107,7 @@ export const STEPS = {
     {
       no: '04',
       title: 'Nomzod va suhbat',
-      text: 'Moslik bo‘yicha nomzodlar ro‘yxati. Suhbat faqat ikki tomon roziligidan keyin ochiladi.',
+      text: 'Moslik boʻyicha nomzodlar roʻyxati. Suhbat faqat ikki tomon roziligidan keyin ochiladi.',
       textShort: 'Suhbat faqat ikki tomon roziligi bilan ochiladi.',
     },
   ],
@@ -117,12 +117,12 @@ export const ROLES = {
   eyebrow: 'Uch rol',
   title: 'Har bir rol uchun alohida oqim',
   subtitle:
-    'Ilova bir xil ekranlarni hammaga ko‘rsatmaydi — kuyov, kelin va vakil turlicha ishlaydi.',
+    'Ilova bir xil ekranlarni hammaga koʻrsatmaydi — kuyov, kelin va vakil turlicha ishlaydi.',
   items: [
     {
       key: 'kuyov',
       name: 'Kuyov',
-      icon: 'users',
+      icon: '/KuyovIcon.svg',
       tone: 'blue',
       points: [
         'Moslik foizi bo‘yicha nomzodlar ro‘yxati',
@@ -134,7 +134,7 @@ export const ROLES = {
     {
       key: 'kelin',
       name: 'Kelin',
-      icon: 'shield',
+      icon: '/kelinIcon.svg',
       tone: 'violet',
       points: [
         'Kelgan so‘rovlarni ko‘rib chiqish',
@@ -146,7 +146,7 @@ export const ROLES = {
     {
       key: 'vakil',
       name: 'Vakil',
-      icon: 'heart',
+      icon: '/vakilIcon.svg',
       tone: 'green',
       points: [
         'Qarindosh nomzod nomidan anketa',
@@ -232,10 +232,10 @@ export const MATCH = {
     { value: '65%', label: 'Kelajak' },
   ],
   points: [
-    'Savollar 5 bo‘limga bo‘lingan: din va qadriyatlar, moliya, qarindoshlar, xarakter, kelajak',
-    'Moslik faqat 30 ta javob to‘liq bo‘lganda hisoblanadi',
-    'Natijada har bir bo‘lim foizi va «samimiylik indeksi» ko‘rsatiladi',
-    'Javoblarni boshqa foydalanuvchi ko‘rmaydi — faqat umumlashgan foiz ko‘rinadi',
+    'Savollar 5 boʻlimga boʻlingan: din va qadriyatlar, moliya, qarindoshlar, xarakter, kelajak',
+    'Moslik faqat 30 ta javob toʻliq boʻlganda hisoblanadi',
+    'Natijada har bir boʻlim foizi va «samimiylik indeksi» koʻrsatiladi',
+    'Javoblarni boshqa foydalanuvchi koʻrmaydi — faqat umumlashgan foiz koʻrinadi',
   ],
 }
 
@@ -243,8 +243,8 @@ export const PRIVACY = {
   eyebrow: 'Xavfsizlik',
   title: 'Maxfiylik — mahsulotning asosiy qismi',
   subtitle:
-    'Rasm va shaxsiy ma’lumot kimga, qachon va qancha muddatga ochilishini foydalanuvchi o‘zi belgilaydi.',
-  subtitleShort: 'Rasm va shaxsiy ma’lumot kimga ochilishini foydalanuvchi o‘zi belgilaydi.',
+    'Rasm va shaxsiy maʼlumot kimga, qachon va qancha muddatga ochilishini foydalanuvchi oʻzi belgilaydi.',
+  subtitleShort: 'Rasm va shaxsiy maʻlumot kimga ochilishini foydalanuvchi o‘zi belgilaydi.',
   guarantees: {
     title: 'Nimalar kafolatlanadi',
     /** `desktopOnly` — maketda tor ekranda oxirgi band ko'rsatilmaydi. */
@@ -257,7 +257,7 @@ export const PRIVACY = {
       },
       { text: 'Bloklash va shikoyat 24 soat ichida ko‘riladi' },
       {
-        text: 'Hisobni o‘chirish va ma’lumotni olib tashlash — profil ichida',
+        text: 'Hisobni o‘chirish va maʻlumotni olib tashlash — profil ichida',
         textShort: 'Hisobni o‘chirish — profil ichida',
       },
       { text: 'Ota-ona yoki vakil hisobini ulash mumkin', desktopOnly: true },
@@ -292,7 +292,7 @@ export const PSYCHOLOGISTS = {
   eyebrow: 'Yordam',
   title: 'Oilaviy psixolog — ilova ichida',
   subtitle:
-    'Tanishuv va nikoh oldidan maslahat: nomzod tanlash, suhbat va oila bilan muloqot bo‘yicha.',
+    'Tanishuv va nikoh oldidan maslahat: nomzod tanlash, suhbat va oila bilan muloqot boʻyicha.',
   cta: 'Band qilish',
   items: [
     {
@@ -321,8 +321,8 @@ export const PSYCHOLOGISTS = {
 
 export const PRICING = {
   eyebrow: 'Narxlar',
-  title: 'Bepul boshlang — kerak bo‘lsa kengaytiring',
-  subtitle: 'To‘lov nomzodlar sonini emas, ishonch va boshqaruv darajasini oshiradi.',
+  title: 'Bepul boshlang — kerak boʻlsa kengaytiring',
+  subtitle: 'Toʻlov nomzodlar sonini emas, ishonch va boshqaruv darajasini oshiradi.',
   note: 'Narxlar dastlabki — to‘lov usullari va sinov muddati aniqlanmoqda.',
   plans: [
     {
@@ -393,22 +393,22 @@ export const FAQ = {
       a: 'Anketa, mezonlar, kelgan takliflar va moslik foizini. Shaxsiy yozishmalar va xom javoblar vakilga ko‘rinmaydi.',
     },
     {
-      q: 'Ma’lumotlarim qanday himoyalanadi?',
-      a: 'Shaxs pasport va selfi orqali tasdiqlanadi, ma’lumotlar shifrlangan holda saqlanadi, istalgan vaqtda o‘chirishni talab qilish mumkin.',
+      q: 'Maʻlumotlarim qanday himoyalanadi?',
+      a: 'Shaxs pasport va selfi orqali tasdiqlanadi, maʻlumotlar shifrlangan holda saqlanadi, istalgan vaqtda o‘chirishni talab qilish mumkin.',
     },
     {
       q: 'Hisobni o‘chirsam nima bo‘ladi?',
-      a: 'Profil darhol yopiladi. 30 kun ichida tiklash mumkin, undan keyin ma’lumotlar butunlay o‘chiriladi.',
+      a: 'Profil darhol yopiladi. 30 kun ichida tiklash mumkin, undan keyin maʻlumotlar butunlay o‘chiriladi.',
     },
   ],
 }
 
 export const CTA = {
-  title: 'Bugun anketani to‘ldiring — mos nomzodni ertaga ko‘ring',
+  title: 'Bugun anketani toʻldiring — mos nomzodni ertaga koʻring',
   subtitle: 'Ro‘yxatdan o‘tish 2 daqiqa. Anketani keyinroq ham to‘ldirishingiz mumkin.',
   stores: [
-    { caption: 'iOS uchun', name: 'App Store' },
-    { caption: 'Android uchun', name: 'Google Play' },
+    { caption: 'Download on the', name: 'App Store', icon: '/Apple.svg' },
+    { caption: 'GET IT ON', name: 'Google Play', icon: '/Playstore.svg' },
   ],
 }
 
@@ -439,7 +439,7 @@ export const FOOTER = {
         { label: 'Maxfiylik siyosati', href: '#xavfsizlik' },
         { label: 'Foydalanish shartlari', href: '#xavfsizlik' },
         { label: 'Ommaviy oferta', href: '#narxlar' },
-        { label: 'Ma’lumotlarni o‘chirish', href: '#xavfsizlik' },
+        { label: 'Maʻlumotlarni o‘chirish', href: '#xavfsizlik' },
       ],
     },
   ],
