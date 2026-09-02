@@ -7,9 +7,8 @@ import Section, { Reveal, SectionHeading } from '@/components/ui/Section.jsx'
  * Maxfiylik bo'limi — ikkita kartochka.
  *
  * Chapda kafolatlar ro'yxati, o'ngda parda tartibining uch bosqichi
- * (bosqichlar ingichka chiziq bilan ajratilgan). Kartochkalar balandligi
- * TENGLASHTIRILMAYDI (`items-start`): maketda ham har biri o'z matniga
- * qarab o'lchamda turadi.
+ * (bosqichlar ingichka chiziq bilan ajratilgan). Keng ekranda ikkala
+ * kartochka bir xil balandlikda turadi (`items-stretch` + `h-full`).
  *
  * Figma: kartochka radius 20px / to'ldirish 32px; kartochka sarlavhasi
  * 20/28 Bold; kafolat bandlari 15/24 fg-body; bosqich nomi 16/22 SemiBold,
@@ -17,7 +16,7 @@ import Section, { Reveal, SectionHeading } from '@/components/ui/Section.jsx'
  */
 export default function Privacy() {
   return (
-    <Section id="xavfsizlik">
+    <Section id="xavfsizlik" tone="raised">
       <SectionHeading
         eyebrow={PRIVACY.eyebrow}
         title={PRIVACY.title}
@@ -29,9 +28,9 @@ export default function Privacy() {
         }
       />
 
-      <div className="mt-10 grid items-start gap-5 md:mt-14 md:gap-6 lg:grid-cols-2">
-        <Reveal>
-          <div className="rounded-[20px] border border-line bg-panel p-6 md:p-8">
+      <div className="mt-10 grid items-stretch gap-5 md:mt-14 md:gap-6 lg:grid-cols-2">
+        <Reveal className="flex flex-col">
+          <div className="flex flex-1 flex-col rounded-[20px] border border-line bg-panel p-6 md:p-8">
             <h3 className="text-[20px] leading-7 font-bold text-ink">{PRIVACY.guarantees.title}</h3>
 
             <ul className="mt-5 space-y-3">
@@ -52,8 +51,8 @@ export default function Privacy() {
           </div>
         </Reveal>
 
-        <Reveal delay={90}>
-          <div className="rounded-[20px] border border-line bg-panel p-6 md:p-8">
+        <Reveal delay={90} className="flex flex-col">
+          <div className="flex flex-1 flex-col rounded-[20px] border border-line bg-panel p-6 md:p-8">
             <h3 className="text-[20px] leading-7 font-bold text-ink">{PRIVACY.curtain.title}</h3>
 
             <ol className="mt-6 divide-y divide-line border-t border-line">

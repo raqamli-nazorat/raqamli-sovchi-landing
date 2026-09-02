@@ -22,6 +22,7 @@ import {
   UserRoundPlus,
   X,
 } from 'lucide-react'
+import { CalendarIcon } from '@/components/ui/customIcons.jsx'
 import {
   AiBrain01Icon,
   Analytics01Icon,
@@ -66,6 +67,7 @@ export const ICONS = {
   filter: SlidersHorizontal,
   shieldCheck: ShieldCheck,
   clock: Clock,
+  calendar: CalendarIcon,
   download: Download,
 
   // — Tugma ichidagi ikonkalar (maketda matndan oldin turadi) —
@@ -120,6 +122,7 @@ export const ICON_GROUPS = [
       'filter',
       'shieldCheck',
       'clock',
+      'calendar',
       'download',
       'userPlus',
       'playCircle',
