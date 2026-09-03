@@ -31,7 +31,7 @@ export default function Pricing() {
               </div>
 
               <p className="mt-5 text-[30px] font-bold tracking-tight text-ink md:text-[34px]">
-                {formatSum(plan.price)} so’m
+                {formatSum(plan.price)} soʻm
                 {plan.period ? <span className="font-bold text-ink"> {plan.period}</span> : null}
               </p>
               <p className="mt-3 text-[15px] text-muted">{plan.caption}</p>

@@ -41,7 +41,7 @@ export default function Psychologists() {
 
               <p className="mt-5 flex items-center gap-2 text-[15px] text-ink">
                 <Icon name="clock" size={16} className="flex-shrink-0 text-faint" />
-                {formatSum(person.price)} so’m · {person.duration}
+                {formatSum(person.price)} soʻm · {person.duration}
               </p>
 
               <div className="mt-auto pt-5">
