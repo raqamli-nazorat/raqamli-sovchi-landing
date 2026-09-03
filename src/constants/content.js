@@ -59,12 +59,12 @@ export const COMPARISON = {
         title: 'Nomzodlar doirasi tor',
         text: 'Tanish-bilish orqali izlash oylar davom etadi va bir necha nomzod bilan cheklanadi.',
       },
-      solution: 'Viloyat, yosh, taʻlim va moslik foizi boʻyicha filtr — mos nomzodlar bir ekranda.',
+      solution: `Viloyat, yosh, ta'lim va moslik foizi bo'yicha filtr — mos nomzodlar bir ekranda.`,
     },
     {
       problem: {
-        title: 'Maʻlumot tekshirilmaydi',
-        text: 'Yosh, oila, taʻlim haqidagi gaplar og‘zaki uzatiladi va noto‘g‘ri chiqishi mumkin.',
+        title: `Ma'lumot tekshirilmaydi`,
+        text: `Yosh, oila, ta'lim haqidagi gaplar og‘zaki uzatiladi va noto‘g‘ri chiqishi mumkin.`,
       },
       solution:
         'Pasport va selfi orqali tasdiqlash, «Tasdiqlangan profil» belgisi va shikoyat tizimi.',
@@ -82,20 +82,20 @@ export const COMPARISON = {
 
 export const STEPS = {
   eyebrow: 'Qanday ishlaydi',
-  title: 'Toʻrt qadam — roʻyxatdan suhbatgacha',
+  title: `To'rt qadam — ro'yxatdan suhbatgacha`,
   subtitle:
-    'Anketa toʻldirish 9 qadam, moslik testi esa ixtiyoriy: testsiz ham nomzodlarni koʻrish mumkin.',
+    `Anketa to'ldirish 9 qadam, moslik testi esa ixtiyoriy: testsiz ham nomzodlarni ko'rish mumkin.`,
   items: [
     {
       no: '01',
-      title: 'Roʻyxatdan oʻtish',
+      title: `Ro'yxatdan o'tish`,
       text: 'Telefon raqami va SMS kod. So‘ng rolni tanlaysiz: kuyov, kelin yoki vakil.',
       textShort: 'Telefon raqami va SMS kod, so‘ng rolni tanlaysiz.',
     },
     {
       no: '02',
-      title: `So'rovnoma toʻldirish`,
-      text: 'Ism, yosh, boʻy, viloyat, taʼlim, suratlar va ovozli tanishtiruv — 9 qadam, progress bilan.',
+      title: `So'rovnoma to'ldirish`,
+      text:  `Ism, yosh, bo'y, viloyat, taʼlim, suratlar va ovozli tanishtiruv — 9 qadam, progress bilan.`,
       textShort: '9 qadam: ism, yosh, bo‘y, viloyat, suratlar, ovoz.',
     },
     {
@@ -107,7 +107,7 @@ export const STEPS = {
     {
       no: '04',
       title: 'Nomzod va suhbat',
-      text: 'Moslik boʻyicha nomzodlar roʻyxati. Suhbat faqat ikki tomon roziligidan keyin ochiladi.',
+      text: `Moslik bo'yicha nomzodlar ro'yxati. Suhbat faqat ikki tomon roziligidan keyin ochiladi. `,
       textShort: 'Suhbat faqat ikki tomon roziligi bilan ochiladi.',
     },
   ],
@@ -117,7 +117,7 @@ export const ROLES = {
   eyebrow: 'Uch rol',
   title: 'Har bir rol uchun alohida oqim',
   subtitle:
-    'Ilova bir xil ekranlarni hammaga koʻrsatmaydi — kuyov, kelin va vakil turlicha ishlaydi.',
+    `Ilova bir xil ekranlarni hammaga ko'rsatmaydi — kuyov, kelin va vakil turlicha ishlaydi.`,
   items: [
     {
       key: 'kuyov',
@@ -152,7 +152,7 @@ export const ROLES = {
         'Qarindosh nomzod nomidan anketa',
         'Nomzod roziligi SMS bilan tasdiqlanadi',
         'Mezonlar, takliflar va uchrashuvlar',
-        'Shaxsiy yozishmalarga kirish yo‘q',
+        `Shaxsiy yozishmalarga kirish yo‘q`,
       ],
     },
   ],
@@ -232,10 +232,10 @@ export const MATCH = {
     { value: '65%', label: 'Kelajak' },
   ],
   points: [
-    'Savollar 5 boʻlimga boʻlingan: din va qadriyatlar, moliya, qarindoshlar, xarakter, kelajak',
-    'Moslik faqat 30 ta javob toʻliq boʻlganda hisoblanadi',
-    'Natijada har bir boʻlim foizi va «samimiylik indeksi» koʻrsatiladi',
-    'Javoblarni boshqa foydalanuvchi koʻrmaydi — faqat umumlashgan foiz koʻrinadi',
+    `Savollar 5 bo'limga bo'lingan: din va qadriyatlar, moliya, qarindoshlar, xarakter, kelajak`,
+    `Moslik faqat 30 ta javob to'liq bo'lganda hisoblanadi`,
+    `Natijada har bir bo'lim foizi va «samimiylik indeksi» ko'rsatiladi`,
+    `Javoblarni boshqa foydalanuvchi ko'rmaydi — faqat umumlashgan foiz ko'rinadi`,
   ],
 }
 
@@ -243,8 +243,8 @@ export const PRIVACY = {
   eyebrow: 'Xavfsizlik',
   title: 'Maxfiylik — mahsulotning asosiy qismi',
   subtitle:
-    'Rasm va shaxsiy maʼlumot kimga, qachon va qancha muddatga ochilishini foydalanuvchi oʻzi belgilaydi.',
-  subtitleShort: 'Rasm va shaxsiy maʻlumot kimga ochilishini foydalanuvchi o‘zi belgilaydi.',
+    `Rasm va shaxsiy maʼlumot kimga, qachon va qancha muddatga ochilishini foydalanuvchi o'zi belgilaydi.`,
+  subtitleShort: `Rasm va shaxsiy ma'lumot kimga ochilishini foydalanuvchi o‘zi belgilaydi.`,
   guarantees: {
     title: 'Nimalar kafolatlanadi',
     /** `desktopOnly` — maketda tor ekranda oxirgi band ko'rsatilmaydi. */
@@ -257,8 +257,8 @@ export const PRIVACY = {
       },
       { text: 'Bloklash va shikoyat 24 soat ichida ko‘riladi' },
       {
-        text: 'Hisobni o‘chirish va maʻlumotni olib tashlash — profil ichida',
-        textShort: 'Hisobni o‘chirish — profil ichida',
+        text: `Hisobni o‘chirish va ma'lumotni olib tashlash — profil ichida`,
+        textShort: `Hisobni o‘chirish — profil ichida`,
       },
       { text: 'Ota-ona yoki vakil hisobini ulash mumkin', desktopOnly: true },
     ],
@@ -270,7 +270,7 @@ export const PRIVACY = {
         name: 'Yopiq',
         icon: 'lock',
         tone: 'neutral',
-        text: 'Surat xiralashgan holda ko‘rinadi, ustida «Maxfiy rasm» yozuvi.',
+        text: `Surat xiralashgan holda ko‘rinadi, ustida «Maxfiy rasm» yozuvi.`,
       },
       {
         name: 'So‘rov',
@@ -282,7 +282,7 @@ export const PRIVACY = {
         name: 'Ochiq',
         icon: 'eye',
         tone: 'green',
-        text: 'Ruxsat berilgach surat ochiladi; istalgan vaqtda qaytarib yopish mumkin.',
+        text: `Ruxsat berilgach surat ochiladi; istalgan vaqtda qaytarib yopish mumkin.`,
       },
     ],
   },
@@ -292,7 +292,7 @@ export const PSYCHOLOGISTS = {
   eyebrow: 'Yordam',
   title: 'Oilaviy psixolog — ilova ichida',
   subtitle:
-    'Tanishuv va nikoh oldidan maslahat: nomzod tanlash, suhbat va oila bilan muloqot boʻyicha.',
+    `Tanishuv va nikoh oldidan maslahat: nomzod tanlash, suhbat va oila bilan muloqot bo'yicha.`,
   cta: 'Band qilish',
   items: [
     {
@@ -321,9 +321,9 @@ export const PSYCHOLOGISTS = {
 
 export const PRICING = {
   eyebrow: 'Narxlar',
-  title: 'Bepul boshlang — kerak boʻlsa kengaytiring',
-  subtitle: 'Toʻlov nomzodlar sonini emas, ishonch va boshqaruv darajasini oshiradi.',
-  note: 'Narxlar dastlabki — to‘lov usullari va sinov muddati aniqlanmoqda.',
+  title: `Bepul boshlang — kerak bo'lsa kengaytiring`,
+  subtitle: `To'lov nomzodlar sonini emas, ishonch va boshqaruv darajasini oshiradi.`,
+  note: `Narxlar dastlabki — to‘lov usullari va sinov muddati aniqlanmoqda.`,
   plans: [
     {
       name: 'Bepul',
@@ -393,18 +393,18 @@ export const FAQ = {
       a: 'Anketa, mezonlar, kelgan takliflar va moslik foizini. Shaxsiy yozishmalar va xom javoblar vakilga ko‘rinmaydi.',
     },
     {
-      q: 'Maʻlumotlarim qanday himoyalanadi?',
-      a: 'Shaxs pasport va selfi orqali tasdiqlanadi, maʻlumotlar shifrlangan holda saqlanadi, istalgan vaqtda o‘chirishni talab qilish mumkin.',
+      q: `Ma'lumotlarim qanday himoyalanadi?`,
+      a: `Shaxs pasport va selfi orqali tasdiqlanadi, ma'lumotlar shifrlangan holda saqlanadi, istalgan vaqtda o‘chirishni talab qilish mumkin.`,
     },
     {
       q: 'Hisobni o‘chirsam nima bo‘ladi?',
-      a: 'Profil darhol yopiladi. 30 kun ichida tiklash mumkin, undan keyin maʻlumotlar butunlay o‘chiriladi.',
+      a: `Profil darhol yopiladi. 30 kun ichida tiklash mumkin, undan keyin ma'lumotlar butunlay o‘chiriladi.`,
     },
   ],
 }
 
 export const CTA = {
-  title: 'Bugun anketani toʻldiring — mos nomzodni ertaga koʻring',
+  title: `Bugun anketani to'ldiring — mos nomzodni ertaga ko'ring`,
   subtitle: 'Ro‘yxatdan o‘tish 2 daqiqa. Anketani keyinroq ham to‘ldirishingiz mumkin.',
   stores: [
     { caption: 'Download on the', name: 'App Store', icon: '/Apple.svg' },
@@ -439,7 +439,7 @@ export const FOOTER = {
         { label: 'Maxfiylik siyosati', href: '#xavfsizlik' },
         { label: 'Foydalanish shartlari', href: '#xavfsizlik' },
         { label: 'Ommaviy oferta', href: '#narxlar' },
-        { label: 'Maʻlumotlarni o‘chirish', href: '#xavfsizlik' },
+        { label: `Ma'lumotlarni o‘chirish`, href: '#xavfsizlik' },
       ],
     },
   ],

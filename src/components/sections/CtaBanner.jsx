@@ -4,8 +4,11 @@ import { Reveal } from '@/components/ui/Section.jsx'
 /**
  * Yakuniy chaqiruv lentasi.
  *
- * Do'kon tugmalari Figma badge'lariga mos: yarim shaffof oq fon
- * (rgba 255 255 255 / 0.1), radius 20px, chapda logotip
+ * Orqa fon Figma gradienti: linear-gradient(90deg, #0474F3 0%,
+ * #3391FD 49.52%, #1D83F5 100%).
+ *
+ * Do'kon tugmalari Figma badge'lariga mos: fon #FFFFFF1A (oq 10%),
+ * hover #00000033 (qora 20%), radius 20px, chapda logotip
  * (`public/Apple.svg`, `public/Playstore.svg`), o'ngda ikki qator —
  * kichik izoh ("Download on the" / "GET IT ON") va yirik nom
  * ("App Store" / "Google Play"), hammasi oq.
@@ -14,7 +17,7 @@ export default function CtaBanner() {
   return (
     <section id="yuklab-olish" className="scroll-mt-24 bg-surface px-4 pb-16 sm:px-6 md:pb-24">
       <Reveal className="mx-auto w-full max-w-[1200px]">
-        <div className="rounded-3xl bg-brand px-6 py-14 text-center sm:px-10 md:py-20">
+        <div className="rounded-3xl bg-[linear-gradient(90deg,#0474F3_0%,#3391FD_49.52%,#1D83F5_100%)] px-6 py-14 text-center sm:px-10 md:py-20">
           <h2 className="mx-auto max-w-3xl text-[26px] leading-[1.16] font-extrabold tracking-[-0.8px] text-white sm:text-[34px] md:text-[42px]">
             {CTA.title}
           </h2>
@@ -27,7 +30,7 @@ export default function CtaBanner() {
               <a
                 key={store.name}
                 href="#top"
-                className="flex items-center gap-3 rounded-[20px] bg-white/10 px-6 py-3.5 text-left ring-1 ring-inset ring-white/10 transition-colors hover:bg-white/[0.16]"
+                className="flex items-center gap-3 rounded-[20px] bg-[#FFFFFF1A] px-6 py-3.5 text-left ring-1 ring-inset ring-white/10 transition-colors hover:bg-[#00000033]"
               >
                 <img
                   src={store.icon}
